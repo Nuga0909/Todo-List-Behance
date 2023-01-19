@@ -16,7 +16,7 @@ class Todo {
   static addTodo() {
     rightCol.innerHTML = "";
     for (let i = 0; i < todos.length; i++) {
-      `
+      rightCol.innerHTML += `
             <div class="task">
             <div class="task-head">
               <p class="title">${todos[i].title}</p>
@@ -38,7 +38,6 @@ class Todo {
             `;
     }
   }
-
 }
 
-export {todos, Todo, rightCol};
+export { todos, Todo, rightCol };

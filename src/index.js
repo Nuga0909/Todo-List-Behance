@@ -20,3 +20,14 @@ more.forEach((e) => {
     popup2.classList.toggle("active");
   });
 });
+
+const addBtn = document.querySelector('.add-btn');
+const newTitle = document.querySelector('.pop-input');
+const newDescription = document.querySelector('#description');
+
+addBtn.addEventListener('click', () => {
+  const newTodo = new Todo(newTitle.value, newDescription.value);
+  todos.push(newTodo);
+  Todo.addTodo();
+  console.log(todos);
+});
