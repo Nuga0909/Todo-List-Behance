@@ -1,3 +1,137 @@
+:root {
+  --darkgrey: #69665c;
+  --grey: #b2afa1;
+  --yellow: #fff9de;
+  --white: #ffffff;
+  --lightblue: #d1e5f7;
+  --lightgreen: #daf2d6;
+  --pink: #ffcece;
+  --violet: #d2ceff;
+  --tag: #fafafa;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Adobe Clean", sans-serif;
+  color: var(--darkgrey);
+}
+
 body {
-    background-color: bisque;
+  margin: 50px;
+  border: 1px solid var(--darkgrey);
+  border-radius: 30px;
+  padding: 30px 50px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-head,
+.p-add {
+  font-size: xxx-large;
+  font-weight: 700;
+}
+
+.container {
+  padding: 30px 0;
+  display: flex;
+}
+
+.left-col {
+  width: 30%;
+  margin-right: 40px;
+}
+
+.task-filter {
+  display: flex;
+  margin: 15px 0;
+  padding: 5px 10px;
+  background-color: var(--tag);
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.work {
+  height: 20px;
+  width: 20px;
+  background-color: var(--violet);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.study {
+  height: 20px;
+  width: 20px;
+  background-color: var(--lightblue);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.ent {
+  height: 20px;
+  width: 20px;
+  background-color: var(--pink);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.family {
+  height: 20px;
+  width: 20px;
+  background-color: var(--lightgreen);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.label {
+  color: var(--grey);
+}
+
+.label input {
+  margin: 20px 10px;
+  opacity: 50%;
+}
+
+.right-col {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 15px;
+}
+
+.task {
+  background-color: var(--yellow);
+  border-radius: 10px;
+  padding: 15px 15px 0 15px;
+}
+
+.task-head {
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.more {
+  font-size: x-large;
+  margin-top: -5px;
+  color: var(--grey);
+}
+
+article {
+  font-size: 14px;
+}
+
+.task-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.task-type {
+  display: flex;
+  padding-top: 15px;
 }
