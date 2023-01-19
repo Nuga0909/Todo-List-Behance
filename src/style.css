@@ -208,3 +208,10 @@ textarea {
   border-radius: 5px;
   width: fit-content;
 }
+
+.cancel,
+.p-add,
+button,
+.more {
+  cursor: pointer;
+}
