@@ -240,3 +240,8 @@ div.popup2.active {
   background-color: var(--white);
   color: var(--grey);
 }
+
+::placeholder {
+  color: var(--grey);
+  /* opacity: 1; */
+}
