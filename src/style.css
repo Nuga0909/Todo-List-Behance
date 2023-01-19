@@ -212,6 +212,31 @@ textarea {
 .cancel,
 .p-add,
 button,
-.more {
+.more, 
+.popup-edit2,
+.popup-delete2 {
   cursor: pointer;
+}
+
+.popup2 {
+  display: none;
+}
+
+.popup-edit2 {
+  border-bottom: 1px dotted var(--darkgrey);
+}
+
+div.popup2.active {
+  display: block;
+  width: 120px;
+  position: absolute;
+  left: 31rem;
+  border-radius: 10px;
+}
+
+.popup2 p {
+  padding: 10px;
+  font-size: small;
+  background-color: var(--white);
+  color: var(--grey);
 }
