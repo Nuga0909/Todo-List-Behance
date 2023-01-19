@@ -223,7 +223,7 @@ button,
 }
 
 .popup-edit2 {
-  border-bottom: 1px dotted var(--darkgrey);
+  border-bottom: 1px dotted var(--grey);
 }
 
 div.popup2.active {

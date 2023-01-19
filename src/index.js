@@ -19,6 +19,3 @@ more.forEach((e) => {
   popup2.classList.toggle('active');
 });
 });
-// document.addEventListener('click', () => {
-//   popup2.classList.remove('active');
-// });
