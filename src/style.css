@@ -135,3 +135,20 @@ article {
   display: flex;
   padding-top: 15px;
 }
+
+.popup {
+  display: none;
+}
+
+div.popup.active {
+  display: block;
+  position: absolute;
+  height: -webkit-fill-available;
+  background-color: #69665c78;
+  right: 0px;
+  top: 0;
+  margin: 50px;
+  border: 1px solid var(--darkgrey);
+  border-radius: 30px;
+  padding: 30px 50px;
+}
