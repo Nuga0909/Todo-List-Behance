@@ -206,9 +206,12 @@ textarea {
   display: flex;
   margin-right: 15px;
   padding: 5px 10px;
-  background-color: var(--tag);
   border-radius: 5px;
   width: fit-content;
+}
+
+.work-filter.active {
+  background-color: var(--tag);
 }
 
 .cancel,
@@ -216,7 +219,8 @@ textarea {
 button,
 .more, 
 .popup-edit2,
-.popup-delete2 {
+.popup-delete2,
+div.task-filter2 {
   cursor: pointer;
 }
 

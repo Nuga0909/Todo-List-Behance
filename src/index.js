@@ -25,9 +25,18 @@ const addBtn = document.querySelector('.add-btn');
 const newTitle = document.querySelector('.pop-input');
 const newDescription = document.querySelector('#description');
 
+const workFilter = document.querySelector('.work-filter');
+workFilter.addEventListener('click', () =>{
+  workFilter.classList.toggle('active');
+  const newTodo = new Todo();
+  newTodo.toggleWorkStatus();
+});
+
 addBtn.addEventListener('click', () => {
   const newTodo = new Todo(newTitle.value, newDescription.value);
   todos.push(newTodo);
+  newTodo.toggleWorkStatus();
   Todo.addTodo();
   console.log(todos);
 });
+

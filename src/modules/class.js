@@ -38,6 +38,10 @@ class Todo {
             `;
     }
   }
+  
+  toggleWorkStatus() {
+    this.isWork = !this.isWork;
+  }
 }
 
 export { todos, Todo, rightCol };
